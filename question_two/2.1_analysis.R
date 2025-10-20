@@ -1,12 +1,10 @@
-# Load required libraries
 library(ggplot2)
-library(dplyr)
-library(tidyr)
-library(readcsv)
+library(tidyverse)
+library(readr)
 
 # Load the data
-league_avg <- read.csv("C:/Users/nolan/OneDrive/Documents/Indiana Pacers Project/league_avg_four_factors.csv")
-pacers_avg <- read.csv("C:/Users/nolan/OneDrive/Documents/Indiana Pacers Project/pacers_results_four_factors.csv")
+league_avg <- read.csv("C:/Users/nolan/OneDrive/Documents/Indiana Pacers Project/question_two/league_avg_four_factors.csv")
+pacers_avg <- read.csv("C:/Users/nolan/OneDrive/Documents/Indiana Pacers Project/question_two/pacers_results_four_factors.csv")
 
 # Convert game_date to Date format
 pacers_avg$game_date <- as.Date(pacers_avg$game_date, format="%m/%d/%Y")
